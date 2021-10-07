@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Bilgi Sistemleri ve Güvenliği 1.Hafta/1.0.0": {
+        "runtime": {
+          "Bilgi Sistemleri ve Güvenliği 1.Hafta.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bilgi Sistemleri ve Güvenliği 1.Hafta/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
