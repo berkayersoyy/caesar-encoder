@@ -1,9 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Bilgi_Sistemleri_ve_Güvenliği_1.Hafta</RootNamespace>
-  </PropertyGroup>
-
-</Project>
