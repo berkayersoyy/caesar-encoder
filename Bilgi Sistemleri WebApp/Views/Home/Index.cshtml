@@ -1,0 +1,30 @@
+﻿@model EncodeViewModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="card-wrapper">
+    <div class="output">
+        <a>SONUÇ: </a>
+        @ViewBag.EncodeText
+    </div>
+    <div class="card card-inside">
+        @using (Html.BeginForm("Cipher", "Home", FormMethod.Post, new {id = "Form1"}))
+        {
+            <div class="input-form">
+                @Html.Label("Metin:")
+                @Html.TextBoxFor(model => model.EncodeText)
+            </div>
+            <br><br>
+            <div class="encode-radio-button">
+                Şifreleme
+                @Html.RadioButtonFor(model => model.EncodeType, "Encryption", new {@checked = "checked"})
+            </div>
+            <div class="encode-radio-button">
+                Şifre Çözme
+                @Html.RadioButtonFor(model => model.EncodeType, "Decryption")
+            </div>
+            <input type="submit" value="ÇALIŞTIR" class="submit-button"/>
+        }
+    </div>
+</div>
