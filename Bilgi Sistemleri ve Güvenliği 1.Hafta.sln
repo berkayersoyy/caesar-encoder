@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bilgi Sistemleri WebApp", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C67E7CC7-57E6-4E72-8DF1-5D376920C4EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bilgi Sistemleri FormApp", "Bilgi Sistemleri FormApp\Bilgi Sistemleri FormApp.csproj", "{0E029377-CB55-452F-A598-56D63F79098C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C67E7CC7-57E6-4E72-8DF1-5D376920C4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67E7CC7-57E6-4E72-8DF1-5D376920C4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C67E7CC7-57E6-4E72-8DF1-5D376920C4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E029377-CB55-452F-A598-56D63F79098C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E029377-CB55-452F-A598-56D63F79098C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E029377-CB55-452F-A598-56D63F79098C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E029377-CB55-452F-A598-56D63F79098C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
