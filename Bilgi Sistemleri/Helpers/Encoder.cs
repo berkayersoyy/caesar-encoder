@@ -11,7 +11,7 @@ namespace Bilgi_Sistemleri.Helpers
             'P', 'Q', 'R', 'S','Ş' , 'T', 'U', 'Ü', 'V', 'W', 'X', 'Y', 'Z',
             'a', 'b', 'c', 'ç','d', 'e', 'f', 'g','ğ', 'h', 'ı','i', 'j', 'k', 'l', 'm', 'n', 'o','ö',
             'p', 'q', 'r', 's','ş', 't', 'u','ü', 'v', 'w', 'x', 'y', 'z',
-            '1','2','3','4','5','6','7','8','9','0',' ','`','~','!','\'','^','#','+','$','%','½','&','/','{','(','[',')',']','=','}','?','*','\\','-','_',',','.',';','.',':','<','>','|','@'
+            '1','2','3','4','5','6','7','8','9','0',' ','`','~','!','\'','^','#','+','$','%','½','&','/','{','(','[',')',']','=','}','?','*','\\','-','_',',','.',';','.',':','<','>','|','@','é','£','"'
         };
         public static string Encipher(string text, int key)
         {
@@ -19,7 +19,11 @@ namespace Bilgi_Sistemleri.Helpers
             for (int i = 0; i < text.Length; i++)
             {
                 var charIndex = Array.IndexOf(_alphabet, text[i]);
-                if (charIndex + key > _alphabet.Length - 1)
+                if (charIndex==-1)
+                {
+                    encodedMessage += text[i];
+                }
+                else if (charIndex + key > _alphabet.Length - 1)
                 {
                     int shift = (charIndex + key) % _alphabet.Length;
                     encodedMessage += _alphabet[shift];
